@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="translate_app.css" />
+    <script
+      src="https://kit.fontawesome.com/800e72e4f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="down">
+        <select id="language">
+          <option value="0">English</option>
+          <option value="1">Geogrian</option>
+          <option value="2">Spanish</option>
+          <option value="3">German</option>
+        </select>
+        <textarea
+          id="totranslate"
+          cols="40"
+          rows="10"
+          placeholder="your text to translate"
+        ></textarea>
+      </div>
+      <i class="fa-solid fa-arrow-right-arrow-left swap"></i>
+      <div class="down2">
+        <select id="language2">
+          <option value="0">English</option>
+          <option value="1">Geogrian</option>
+          <option value="2">Spanish</option>
+          <option value="3">German</option>
+        </select>
+        <textarea
+          id="translated"
+          cols="40"
+          rows="10"
+          placeholder="no translation yet"
+        ></textarea>
+        <span>
+          <i class="fa-solid fa-book"></i>
+          <i class="fa-regular fa-square-plus" onclick="showAddForm()"></i>
+        </span>
+      </div>
+      <a href="../hangman/hangMan.html">previous</a>
+      <a href="../index.html">start</a>
+    </main>
+    <form action="" id="newword" name="new-word">
+      <i class="fa-solid fa-xmark" onclick="hide()"></i>
+      <div>
+        <div class="down">
+          <select id="new-language">
+            <option value="0">English</option>
+            <option value="1">Geogrian</option>
+            <option value="2">Spanish</option>
+            <option value="3">German</option>
+          </select>
+          <input id="new-word" type="text" placeholder="new word" />
+        </div>
+        <div class="down">
+          <select id="new-language2">
+            <option value="0">English</option>
+            <option value="1">Geogrian</option>
+            <option value="2">Spanish</option>
+            <option value="3">German</option>
+          </select>
+          <input id="meaning" type="text" placeholder="meaning" />
+        </div>
+      </div>
+      <p class="warning"></p>
+      <button onclick="add()" type="button">add new word</button>
+    </form>
+    <script src="translate_app.js"></script>
+  </body>
+</html>

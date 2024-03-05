@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: aliceblue;
+}
+main {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  letter-spacing: 1px;
+  justify-content: center;
+}
+.down,
+.down2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  flex-direction: column;
+  max-width: fit-content;
+}
+select,
+textarea {
+  font-size: 1rem;
+  padding: 1rem;
+  outline: none;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  color: darkblue;
+}
+
+textarea {
+  max-width: fit-content;
+  border-radius: 10px;
+  padding: 1rem;
+  color: black;
+}
+.swap {
+  align-self: flex-start;
+  margin: 1.5rem 0;
+  color: darkblue;
+}
+span {
+  align-self: flex-end;
+  font-size: xx-large;
+  padding-right: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.fa-book,
+.fa-regular,
+.fa-xmark {
+  color: rgb(56, 56, 176);
+}
+.fa-xmark {
+  justify-self: end;
+}
+form > div {
+  display: flex;
+  gap: 1rem;
+}
+form {
+  visibility: hidden;
+  display: grid;
+  max-width: fit-content;
+  gap: 1rem;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 1rem;
+  /* visibility: hidden; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px 7px gray;
+}
+button {
+  max-width: fit-content;
+  justify-self: center;
+  border: none;
+  background-color: darkblue;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+input {
+  outline: none;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  font-size: large;
+  padding: 0.6rem;
+}
+.warning {
+  text-align: center;
+  color: red;
+}

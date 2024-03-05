@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hangMan.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>HANGMAN</h1></header>
+    <main>
+      <div class="flex">
+        <div id="img-div"></div>
+        <div>
+          <div>
+            <p class="word"></p>
+            <p class="hint"></p>
+            <p class="mistakes"></p>
+          </div>
+
+          <div>
+            <button onclick="check(this); disable(this)" value="Q">Q</button>
+            <button onclick="check(this); disable(this)" value="W">W</button>
+            <button onclick="check(this); disable(this)" value="E">E</button>
+            <button onclick="check(this); disable(this)" value="R">R</button>
+            <button onclick="check(this); disable(this)" value="T">T</button>
+            <button onclick="check(this); disable(this)" value="Y">Y</button>
+            <button onclick="check(this); disable(this)" value="U">U</button>
+            <button onclick="check(this); disable(this)" value="I">I</button>
+            <button onclick="check(this); disable(this)" value="O">O</button>
+            <button onclick="check(this); disable(this)" value="P">P</button>
+            <br />
+            <button onclick="check(this); disable(this)" value="A">A</button>
+            <button onclick="check(this); disable(this)" value="S">S</button>
+            <button onclick="check(this); disable(this)" value="D">D</button>
+            <button onclick="check(this); disable(this)" value="F">F</button>
+            <button onclick="check(this); disable(this)" value="G">G</button>
+            <button onclick="check(this); disable(this)" value="H">H</button>
+            <button onclick="check(this); disable(this)" value="J">J</button>
+            <button onclick="check(this); disable(this)" value="K">K</button>
+            <button onclick="check(this); disable(this)" value="L">L</button>
+            <br />
+            <button onclick="check(this); disable(this)" value="Z">Z</button>
+            <button onclick="check(this); disable(this)" value="X">X</button>
+            <button onclick="check(this); disable(this)" value="C">C</button>
+            <button onclick="check(this); disable(this)" value="V">V</button>
+            <button onclick="check(this); disable(this)" value="B">B</button>
+            <button onclick="check(this); disable(this)" value="N">N</button>
+            <button onclick="check(this); disable(this)" value="M">M</button>
+          </div>
+        </div>
+      </div>
+      <a href="../guess_number/guess_num.html">previous</a>
+      <a href="../translate-project/translate.html.html">next</a>
+
+      <div class="result lost">
+        <h2>Dude You Are So Dead</h2>
+        <p class="correct-answer"></p>
+        <h3>&#128557;</h3>
+        <button class="try" onclick="document.location.reload()">
+          try again
+        </button>
+      </div>
+      <div class="result won">
+        <h2>YOU Survived!</h2>
+        <p class="correct-answer"></p>
+        <h3>&#129321;</h3>
+        <button class="try" onclick="document.location.reload()">
+          try again
+        </button>
+      </div>
+    </main>
+    <script src="hangMan.js"></script>
+  </body>
+</html>

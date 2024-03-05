@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guess_num.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Guess the Number!</h1>
+    <p class="ranges"></p>
+    <div class="b-div">
+      <div>
+        <input
+          type="text"
+          class="range"
+          placeholder="min"
+          id="min"
+          oninput="randomNumGen(); input('min')"
+        />
+      </div>
+      <span>-</span>
+      <div>
+        <input
+          type="text"
+          class="range"
+          placeholder="max"
+          id="max"
+          oninput="randomNumGen(); input('max')"
+        />
+      </div>
+    </div>
+
+    <input type="text" class="num" />
+    <p class="hint"></p>
+    <br />
+    <button onclick="guessGame();">Guess</button>
+    <p class="tries">tries:0</p>
+    <p class="guesses">guesses:0</p>
+    <button onclick="reset()">reset the game</button>
+
+    <a href="../index.html">previous</a>
+    <a href="../hangman/hangMan.html">next</a>
+    <script src="guess_num.js"></script>
+  </body>
+</html>

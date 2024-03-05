@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="calc"></p>
+    <button class="number" onclick="calc(1)">1</button>
+    <button class="number" onclick="calc(2)">2</button>
+    <button class="number" onclick="calc(3)">3</button>
+    <button class="number operation" onclick="calc(' + ')">+</button>
+    <br />
+    <button class="number" onclick="calc(4)">4</button>
+    <button class="number" onclick="calc(5)">5</button>
+    <button class="number" onclick="calc(6)">6</button>
+    <button class="number operation" onclick="calc(' - ')">-</button>
+    <br />
+    <button class="number" onclick="calc(7)">7</button>
+    <button class="number" onclick="calc(8)">8</button>
+    <button class="number" onclick="calc(9)">9</button>
+    <button class="number operation" onclick="calc(' * ')">*</button>
+    <br />
+    <button class="number" onclick="calc(0)">0</button>
+    <button class="number operation" onclick="calc(' / ')">/</button>
+    <button class="number operation" onclick="calc('.')">.</button>
+    <button class="number operation" onclick="evaluation()">=</button>
+    <br />
+    <button class="number cl" onclick="cl()">clear</button>
+
+    <a href="./guess_number/guess_num.html">next</a>
+    <script src="script.js"></script>
+  </body>
+</html>
